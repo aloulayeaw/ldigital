@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Layenne Digital{% endblock %}</title>
+        {% block stylesheets %}
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="icon" href="{{ asset('"images/logold.png"') }}" type="">
+            <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CLato%7CKalam:300,400,700">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style-3.css') }}" id="main-styles-link">
+        {% endblock %}
+    </head>
+        {% block body %}
+            <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header header-creative-wrap context-dark">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-creative rd-navbar-creative-2" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="100px" data-xl-stick-up-offset="112px" data-xxl-stick-up-offset="132px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse"></div>
+            <div class="rd-navbar-aside-outer">
+              <div class="rd-navbar-aside">
+                <div class="rd-navbar-collapse">
+                  <ul class="contacts-classic">
+                  </ul><a class="rd-navbar-basket rd-navbar-basket-mobile fl-bigmug-line-shopping202" href=""></a>
+                </div>
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logold.png" alt="" width="137" height="35" srcset="images/logold.png"/><img class="brand-logo-light" src="images/logold.png" alt="" width="137" height="35" srcset="images/logold.png"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-aside-element">
+                  <!-- RD Navbar Basket-->
+                  <div class="rd-navbar-basket-wrap">
+                    <div class="cart-inline">
+                      <div class="cart-inline-body">
+                        <div class="cart-inline-item">
+                          <div class="unit unit-spacing-sm align-items-center">
+                            <div class="unit-left"><a class="cart-inline-figure" href="single-product.html"><img src="images/product-mini-6-100x90.png" alt="" width="100" height="90"/></a></div>
+                            <div class="unit-body">
+                              <div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-inline-item">
+                          <div class="unit unit-spacing-sm align-items-center">
+                            <div class="unit-left"><a class="cart-inline-figure" href="single-product.html"><img src="images/product-mini-7-100x90.png" alt="" width="100" height="90"/></a></div>
+                            <div class="unit-body">
+                              <div>
+                                <div class="group-xs group-middle">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ path ('home') }}">Accueil</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ path ('add') }}">Banque Image</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ path ('crea') }}">Crea</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="{{ path ('gallerie') }}">Gallery</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-gallery.html">Espace Presse</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-shop.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+            <!-- Swiper-->
+      <section class="section swiper-container swiper-slider swiper-slider-4" data-loop="true">
+        <div class="swiper-wrapper context-dark">
+          <div class="swiper-slide swiper-slide-1" data-slide-bg="images/sliders/1.jpg">
+            <div class="swiper-slide-caption section-md text-sm-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-8 col-md-7">
+                    <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">Layenne Digital <br>
+                    </h2>
+                    <h5 class="swiper-title-2 text-width-medium" data-caption-animate="fadeInLeft" data-caption-delay="250">Ue Portail de la communauté Akhlou lahi</h5>
+                    <div class="button-wrap" data-caption-animate="fadeInLeft" data-caption-delay="400"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-2" data-slide-bg="images/sliders/2.jpg">
+            <div class="swiper-slide-caption section-md text-center">
+              <div class="container">
+                <h2 class="swiper-title-1" data-caption-animate="fadeInLeft" data-caption-delay="100">Un Seul But</h2>
+                <h5 class="swiper-title-2" data-caption-animate="fadeInRight" data-caption-delay="250">Service le Mahdi As <br class="d-none d-md-block">
+                </h5>
+                <div class="button-wrap" data-caption-animate="fadeInUp" data-caption-delay="400"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper Pagination-->
+        <div class="swiper-pagination"></div>
+        <!-- Swiper Navigation-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br><br><br><br><br><br><br><br><br>
+      <h2 class="header center orange-text">Admin Page</h2>
+       <!-- Page <h1 class="header center orange-text">You are logged in as , </h1>-->
+
+
+      <br>
+      <br>
+
+    </div>
+  </div>
+  
+  <div class="row">
+    </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <!-- Page Footer-->
+      <footer class="section footer-modern footer-modern-2">
+        <div class="footer-modern-panel text-center">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp; </span><span>Layenne Digital </span><span class="copyright-year"></span><span>&nbsp;</span><span>.&nbsp; All rights reserved.</span><span>&nbsp;</span><span>.</span></p>
+            <ul class="list-inline list-social-3 list-inline-sm">
+                  <li><a class="icon mdi mdi-facebook icon-xxs" href="#"></a></li>
+                  <li><a class="icon mdi mdi-twitter icon-xxs" href="#"></a></li>
+                  <li><a class="icon mdi mdi-instagram icon-xxs" href="#"></a></li>
+                  <li><a class="icon mdi mdi-google-plus icon-xxs" href="#"></a></li>
+                  <li><a class="icon mdi mdi-skype icon-xxs" href="#"></a></li>
+                </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="{{asset('js/core.min.js')}}"></script>
+    <script src="{{asset('js/script.js')}}"></script>
+        
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+ 
+</html>

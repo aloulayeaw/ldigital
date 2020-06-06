@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Page Title -->
+    <title>{% block title %}Layenne Digital{% endblock %}</title>
+    {% block stylesheets %}
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('parallax/img/img/logold.png') }}">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="{{ asset('vendor/css/bundle.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="{{ asset('vendor/css/revolution-settings.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/css/swiper.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('vendor/css/LineIcons.min.css') }}">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="{{ asset('parallax/css/pagepiling.css') }}">
+    <link rel="stylesheet" href="{{ asset('parallax/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('parallax/css/animate.min.css') }}">
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %}
+
+<!--Preloader-->
+
+<div class="loader" id="loader-fade">
+    <div class="">
+        <!--<div class="indeterminate"></div>-->
+        <!--<iframe src="parallax/img/audio/1.mp3" playsinline autoplay preload="auto" webkit-playsinline="true" x-webkit-airplay="true" poster="" data-setup="{}"></iframe>-->
+    </div>
+</div>
+
+<!--End Preloader-->
+
+<!--Header Start-->
+<header>
+
+    <!--Navigation-->
+    <nav class="navbar navbar-top-default navbar-expand-lg navbar-standard">
+        <div class="container">
+            <a href="#page1" title="Logo" class="link logo scroll">
+                <!--Logo Default-->
+                <img style="width: 70px;height: 50px;" src="parallax/img/img/logold.png" class="logo-dark" alt="logo">
+            </a>
+
+            <ul id="menu" class="d-none d-lg-block alt-font">
+                <li ><a class="link leater-space" href="#page1">Accueil</a></li>
+                <li><a class="link leater-space" href="#page2">A Propos</a></li>
+                <li><a class="link leater-space" href="#page4">Mission</a></li>
+                <li><a class="link leater-space" href="#page4">Team</a></li>
+                <li><a class="link leater-space" href="#page5">Gallerie</a></li>
+                <li><a class="link leater-space" href="#page7">Contact</a></li>
+                <a href="{{ path ('app_login') }}" class="scroll btn btn-large btn-rounded btn-blue color-white link">Se Connecter</a>
+            </ul>
+
+            <!--Side Menu Button-->
+            <div class="side-nav-btn animated-wrap" id="sidemenu_toggle">
+                <div class="animated-element">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- side menu -->
+    <div class="side-menu">
+        <div class="inner-wrapper">
+            <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+            <nav class="side-nav">
+                <ul class="navbar-nav" id="side-menu">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page1">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page4">A Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page2">Mission</a>
+                    </li>                    
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page3">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page5">Gallerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#page6">Contact</a>
+                    </li>
+                    <a href="{{ path ('app_login') }}" class="scroll btn btn-large btn-rounded btn-blue color-white link">Se Connecter</a>
+                </ul>
+            </nav>
+
+            <div class="side-footer text-white w-100">
+                <ul class="social-icons-simple">
+                    <li><a href="#." class="facebook_bg_hvr2"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
+                    <li><a href="#." class="twitter_bg_hvr2"><i class="fab fa-twitter" aria-hidden="true"></i></a> </li>
+                    <li><a href="#." class="linkdin_bg_hvr2"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a> </li>
+                    <li><a href="#." class="instagram_bg_hvr2"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
+                </ul>
+                <p class="whitecolor">&copy; 2020. <a class="web-link text-white" href="" target="_blank">Layéne Digital</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- End side menu -->
+
+
+    <!--slider social-->
+    <div class="slider-social d-md-block d-none">
+        <ul class="list-unstyled">
+            <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+</header>
+
+
+<div id="page-scroll">
+
+    <!--Slider-->
+    <section class="section" id="page1">
+        <div id="rev_slider_346_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="beforeafterslider1" data-source="gallery" style="background:#252525;padding:0px;">
+            <!-- START REVOLUTION SLIDER 5.4.3.3 fullscreen mode -->
+            <div id="main-slider-four" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.3.3">
+                <ul>
+                    <!-- Slide -->
+                    <li data-index="rs-964" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../../assets/parallax/img/night-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-beforeafter='{"moveto":"50%|50%|50%|50%","bgColor":"","bgFit":"cover","bgPos":"center center","bgRepeat":"no-repeat","direction":"horizontal","easing":"Power2.easeInOut","delay":"500","time":"750","out":"fade","carousel":false}'>
+                        <!-- MAIN IMAGE -->
+                        <h2 class="d-none">sd</h2>
+                        <video class="video" src="parallax/img/img/2.mp4" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" class="rev-slidebg" data-no-retina autoplay muted playsinline loop></video> 
+                        <!-- LAYERS -->
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-5"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['-140','-140','-140','-140']"
+                             data-fontsize="['60','60','60','50']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="before"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                             data-start="1000" data-splitin="none" data-splitout="none"
+                             style="z-index:1; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">
+                        </div>
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-5"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['-140','-140','-140','-140']"
+                             data-fontsize="['60','60','60','50']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="after"
+                             data-transform_idle="o:1;"
+                             data-transform_in="x:-50px;opacity:0;s:2000;e:Power3.easeOut;"
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                             data-start="1000" data-splitin="none" data-splitout="none"
+                             style="z-index:1; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">
+                        </div>
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-5"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']"
+                             data-fontsize="['60','60','60','50']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="before"
+                             data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                             data-start="1200" data-splitin="none" data-splitout="none"
+                             style="z-index:2; font-weight: 700; letter-spacing: 1px; color: #ffffff; font-family: 'Raleway', sans-serif;text-transform:capitalize">Layéne Digital
+                        </div><div class="tp-caption tp-resizeme rs-parallaxlevel-5"
+                                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                   data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']"
+                                   data-fontsize="['60','60','60','50']"
+                                   data-whitespace="nowrap" data-responsive_offset="on"
+                                   data-width="['none','none','none','none']" data-type="text"
+                                   data-textalign="['center','center','center','center']"
+                                   data-beforeafter="after"
+                                   data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                   data-start="1200" data-splitin="none" data-splitout="none"
+                                   style="z-index:2; font-weight: 700; letter-spacing: 1px; color: #ffffff; font-family: 'Raleway', sans-serif;text-transform:capitalize">Layéne Digital
+                    </div>
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-5"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                             data-fontsize="['60','60','60','50']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="before"
+                             data-transform_idle="o:1;"
+                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                             data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                             data-start="1000" data-splitin="none" data-splitout="none"
+                             style="z-index:3; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">
+                        </div>
+                        <div class="tp-caption tp-resizeme rs-parallaxlevel-5"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                             data-fontsize="['60','60','60','50']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="after"
+                             data-transform_idle="o:1;"
+                             data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                             data-transform_out="s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                             data-start="1000" data-splitin="none" data-splitout="none"
+                             style="z-index:3; font-weight: 100; color: #ffffff; font-family: 'Poppins', sans-serif;text-transform:capitalize">
+                        </div>
+                        <div class="tp-caption tp-resizeme"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
+                             data-fontsize="['22','22','18','18']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="before"
+                             data-transform_idle="o:1;"
+                             data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                             data-start="1500" data-splitin="none" data-splitout="none"
+                             style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Raleway', sans-serif;text-transform:capitalize">Le Portail Digital de la communauté Layéne
+                        </div>
+                        <div class="tp-caption tp-resizeme"
+                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                             data-y="['middle','middle','middle','middle']" data-voffset="['70','70','70','70']"
+                             data-fontsize="['22','22','18','18']"
+                             data-whitespace="nowrap" data-responsive_offset="on"
+                             data-width="['none','none','none','none']" data-type="text"
+                             data-textalign="['center','center','center','center']"
+                             data-beforeafter="after"
+                             data-transform_idle="o:1;"
+                             data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;s:1000;e:Power2.easeOut;"
+                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                             data-start="1500" data-splitin="none" data-splitout="none"
+                             style="z-index:4; font-weight: 100; color: #ffffff; line-height:30px;  font-family: 'Raleway', sans-serif;text-transform:capitalize">Le Portail Digital de la communauté Layéne
+                        </div>
+                        <div class="tp-caption tp-resizeme"
+                             id="slide-24-layer-129" data-x="['center','center','center','center']"
+                             data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']"
+                             data-voffset="['190','70','70','130']"
+                             data-width="['160','160','160','160']"
+                             data-frames='[{"delay":600,"speed":2000,"frame":"0","from":"sX:1;sY:1;opacity:0;fb:40px;","to":"o:1;fb:0;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                             data-textAlign="['center','center','center','center']"
+                             style="z-index:99; max-width: 960px">
+                            <!--<a href="#features" class="scroll btn btn-large btn-rounded btn-blue color-white link"></a>-->
+                        </div>
+
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+            </div>
+        </div>
+    </section>
+    <!--Slider End-->
+    <section class="section bg-skills" id="page2">
+
+        <div class="container h-100">
+            <div class="row h-100">                
+                <div class="col-12 my-auto">
+                    <h3 class="wow bounceIn" style="text-align: center;color: white;">Layéne Digital</h3>
+                    <br>
+                    <div class="row">                        
+                        <div class="col-md-6">
+                            <ul class="team-progress text-left p-0 m-0">
+                                <!--Progress Item-->
+                                <li class="progress-item">
+                                    <p style="text-align: justify; font-family: 'Raleway';" data-aos="fade-left" class="wow fadeInLeft">Layéne Digital était auparavant nommé "137em anniversaire de l'Appel de Seydina Limamou Lahi al Mahdi psl" comme page Facebook. La page a été créée le 1er Aril 2017 par de jeunes layénes issus de différentes localités de la région de <span style="color: rgb(255, 230, 230) ;"> Dakar, Malika, Cambérene, Bargny, Mbao, Keur Massar, Ngor, Yeumbeul etc...</span></p>
+                                </li>
+                                <!--Progress Item-->
+                                <li class="progress-item">
+                                    <p style="text-align: justify;font-family: 'Raleway';">Conscients du manque de visibilité de la Communauté Layéne sur internet et plus particulièrement sur les réseaux sociaux ces jeunes ont fini de formuler le projet dénommé Layéne Digital par la mise en place d'une plateforme technique du même nom.Layéne existe sur FaceBook, Instagram et Twitter qui sont les réseaux sociaux les plus utilisés par les sénégalais à travers le monde.</p>
+                                </li>
+                                <li class="progress-item">
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col-md-6">
+                            <ul class="team-progress text-left p-0 m-0">
+                                <!--Progress Item-->
+                                <li class="progress-item">
+                                    <p style="text-align: justify; font-family: 'Raleway'; ">Notre organisation est totalement bénévole et regroupe différents acteurs et professionnels évoluant dans le domaine de l'information, de la communication et du digital.
+                                    Layéne Digital est composé d'une diversité de profils; <span style="color: yellow;"> Photographes, Infographes, Vidéo Makers, Developpers, Web Designers, Digital Managers, Journalistes, etc...</span></p>
+                                </li>
+                                <!--Progress Item-->
+                                <li class="progress-item">
+                                    <p style="text-align: justify; font-family: 'Raleway'; ">
+                                    Ainsi, cette diversité d'expertise constitue notre pus grande richesse. Ce que nous comptons convertir en un réel atout au Service de notre communauté à travers ses différentes organisations ou regroupements ici au Sénégal et dans le diaspora.</p>
+                                </li>
+                                <li class="progress-item m-0">
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services-->
+        <section class="section bg-services" id="page3">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="offset-md-4 col-md-4 my-auto">
+                    <div id="services_slider" class="owl-carousel owl-theme">
+                        <!--services item-->
+                        <div class="services-item item text-center">
+                            <div class="services-icon per-slide">
+                                <i class="fas fa-camera-retro wow fadeInUp"></i>
+                            </div>
+                            <h1 class="mb-4 text-white per-slide wow fadeInRight font-weight-light shining-text">Photographes</h1>
+                            <!--line-->
+                            <!--<div  class="testimonial-line wow fadeInRight"></div>-->
+                            <p style="text-align:center;" data-aos="fade-left" class="mb-5 per-slide text-white wow fadeInLeft">Jeune Dynamique etc...</p>
+                        </div>
+                        <!--services item-->
+                        <div class="services-item item text-center">
+                            <div class="services-icon per-slide">
+                                <i class="fab fa-creative-commons-sampling wow fadeInUp"></i>
+                            </div>
+                            <h1 class="mb-4 text-white per-slide wow fadeInRight font-weight-light shining-text">Infographes</h1>
+                            <!--line-->
+                            <!--<div  class="testimonial-line wow fadeInRight"></div>-->
+                            <p style="text-align:center;" data-aos="fade-left" class="mb-5 per-slide text-white wow fadeInLeft">Jeune Dynamique etc...</p>
+                        </div>
+                        <!--services item-->
+                        <div class="services-item item text-center">
+                            <div class="services-icon per-slide">
+                                <i class="fas fa-file-video wow fadeInUp"></i>
+                            </div>
+                            <h1 class="mb-4 text-white per-slide wow fadeInRight font-weight-light shining-text">Vidéo Makers</h1>
+                            <!--line-->
+                            <!--<div  class="testimonial-line wow fadeInRight"></div>-->
+                            <p style="text-align:center;" data-aos="fade-left" class="mb-5 per-slide text-white wow fadeInLeft">Jeune Dynamique etc...</p>
+                        </div>                        
+                        <div class="services-item item text-center">
+                            <div class="services-icon per-slide">
+                                <i class="fas fa-laptop-code wow fadeInUp"></i>
+                            </div>
+                            <h1 class="mb-4 text-white per-slide wow fadeInRight font-weight-light shining-text">Developpers</h1>
+                            <!--line-->
+                            <!--<div  class="testimonial-line wow fadeInRight"></div>-->
+                            <p style="text-align:center;" data-aos="fade-left" class="mb-5 per-slide text-white wow fadeInLeft">Jeune Dynamique etc...</p>
+                        </div>
+                        <div class="services-item item text-center">
+                            <div class="services-icon per-slide">
+                                <i class="fab fa-digital-ocean wow fadeInUp"></i>
+                            </div>
+                            <h1 class="mb-4 text-white per-slide wow fadeInRight font-weight-light shining-text">Digital Managers</h1>
+                            <!--line-->
+                            <!--<div  class="testimonial-line wow fadeInRight"></div>-->
+                            <p style="text-align:center;" data-aos="fade-left" class="mb-5 per-slide text-white wow fadeInLeft">Jeune Dynamique etc...</p>
+                        </div>
+                        <!--services item-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-servicess" id="">
+       <div class="container">
+            <div class="row text-center">
+                        <h2 class="wow bounceIn" data-wow-delay="1.3s" style="">Télécharger notre Application</h2>
+                <div class="col-md-12">
+                        <hr><br>
+                        <div class="row">
+                            <div class="col-md-6 wow fadeInLeft" data-wow-delay="1.6s">
+                                    <img style="height: 500px;" src="parallax/img/appli.jpeg" alt="" class="img_fluid">
+                                    <hr style="color: white;"><br>
+                            </div>                            
+                            <div class="appli col-md-6 wow fadeInLeft" data-wow-delay="1.6s">
+                                    <p> Description de l'appli
+                                    Description de l'appli
+                                    Description de l'appli</p>
+                                    <hr><br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services End-->
+
+    <!-- Bars -->
+    <!-- Bars Ends -->
+
+    <!-- Team -->
+    <section class="section bg-team" id="page3">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-md-6 my-auto">
+                    <div id="testimonial-quote" class="owl-carousel">                        
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/magueye.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Magueye Ndiaye</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>                        
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/assane.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Assane Fall</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p class="m-0">Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/papi.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Papi Jongal</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/mantou.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Mame Mantou Laye</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/melissa.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Mame Lissa Laye Diop</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-1 mb-md-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-1 mb-md-5"><p class="m-0">Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>                                                
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/moussa.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Moussa Laye Mbengue</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/babacar.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Babacar Diéne</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p class="m-0">Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/sidi.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Sidy Diaw</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/bib.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Abibou Laye</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/diagne.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Ibra Diagne</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p class="m-0">Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/papelaye.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Pape Laye</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p class="m-0">Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/ardo.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Aliou laye Sow</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p>Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote whitecolor">
+                                <div class="team-img mb-4"><img src="parallax/img/team/layeaw.png" alt="img"></div>
+                                <h1 class="font-weight-light mb-3 alt-font">Alassane Aw</h1>
+                                <div class="mb-3 testimonial-line wow fadeInleft"></div>
+                                <div class="mb-5"> <span>le job actu</span></div>
+                                <div class="team-description mb-5"><p class="m-0">Une description de son job professionnelle et et dans le groupe</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="owl-thumbs" class="owl-dots">
+                        <button class="owl-dot active link"><img src="parallax/img/team/magueye.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/assane.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/papi.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/mantou.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/melissa.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/moussa.png"  alt="img"></button>                        
+                        <button class="owl-dot link"><img src="parallax/img/team/babacar.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/sidi.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/bib.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/diagne.png"  alt="img"></button>                        
+                        <button class="owl-dot link"><img src="parallax/img/team/papelaye.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/ardo.png"  alt="img"></button>
+                        <button class="owl-dot link"><img src="parallax/img/team/layeaw.png"  alt="img"></button>
+                    </div>
+                    <div class="team-item d-none"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Ends -->
+
+    <!--Portfolio-->
+    <section class="section" id="page5">
+        <div id="content-scroll">
+            <h2 class="d-none">sas</h2>
+            <!-- Showcase Holder -->
+            <div id="showcase-holder">
+                <div id="showcase-tilt-wrap">
+                    <div id="showcase-tilt">
+                        <div id="showcase-slider" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="09">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-6.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project09.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="01">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/camberene-16.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project01.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="02">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-16.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project02.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide bg-video" data-title="" data-subtitle="" data-number="03">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-18.jpg">
+                                        </div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project03.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="04">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-26.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project04.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="05">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-22.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project05.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="06">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-30.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project06.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="07">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/Yoff-31.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project07.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="08">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/ngor-6.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project08.html"></a>
+                                </div>
+                                <!--/Section Slide -->                                
+
+
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-title="" data-subtitle="" data-number="10">
+                                    <div class="img-mask">
+                                        <div class="section-image" data-src="parallax/img/img/gallery/camberene-9.jpg"></div>
+                                    </div>
+                                    <a class="showcase-link-project" data-type="page-transition" href="project10.html"></a>
+                                </div>
+                                <!--/Section Slide -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-pagination-wrap">
+                    <div class="showcase-counter">
+                        <span data-total="10"></span>
+                    </div>
+                    <div class="showcase-pagination"></div>
+                    <div class="caption-border left"></div>
+                    <div class="caption-border right"></div>
+                    <div class="arrows-wrap ">
+                        <div class="prev-wrap animated-wrap"><div class="swiper-button-prev swiper-button-white parallax-element animated-element"></div></div>
+                        <div class="next-wrap animated-wrap"><div class="swiper-button-next swiper-button-white parallax-element animated-element"></div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Showcase Holder -->
+
+            <!-- swiper thumbnails -->
+            <div class="swiper-thumbnails link">
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-6.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/camberene-16.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-16.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-18.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-26.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-22.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-30.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/Yoff-31.jpg" alt="img"> </button>
+                <button class="bullet"><img src="parallax/img/img/gallery/ngor-6.jpg" alt="img"> </button>                
+                <button class="bullet"><img src="parallax/img/img/gallery/camberene-9.jpg" alt="img"> </button>
+            </div>
+            <!-- swiper thumbnails -->
+
+        </div>
+    </section>
+    <!--Portfolio End-->
+
+
+</div>
+
+<!--Animated Cursor-->
+<div id="aimated-cursor">
+    <div id="cursor">
+        <div id="cursor-loader"></div>
+    </div>
+</div>
+{% endblock %}
+<!--Animated Cursor End-->
+
+{% block javascripts %}
+<!-- JavaScript -->
+<script src="{{asset('vendor/js/bundle.min.js') }}"></script>
+<script src="{{asset('vendor/js/wow.js') }}"></script>
+
+<!-- Plugin Js -->
+<script src="{{asset('vendor/js/owl.carousel.min.js') }}"></script>
+<script src="{{asset('vendor/js/swiper.min.js') }}"></script>
+<script src="{{asset('vendor/js/jquery.appear.js') }}"></script>
+<script src="{{asset('vendor/js/TweenMax.min.js') }}"></script>
+<script src="{{asset('vendor/js/parallaxie.min.js') }}"></script>
+<!-- REVOLUTION JS FILES -->
+<script src="{{asset('vendor/js/jquery.themepunch.tools.min.js') }}"></script>
+<script src="{{asset('vendor/js/jquery.themepunch.revolution.min.js') }}"></script>
+<!-- SLIDER REVOLUTION EXTENSIONS -->
+<script src="{{asset('vendor/js/extensions/revolution.extension.actions.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.carousel.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.migration.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.video.min.js') }}"></script>
+<script src="{{asset('vendor/js/extensions/revolution.extension.beforeafter.min.js') }}"></script>
+
+<script src="{{asset('parallax/js/pagepiling.min.js') }}"></script>
+<script src="{{asset('parallax/js/swiper-thumbnail.js') }}"></script>
+<script src="{{asset('parallax/js/script.js') }}"></script>
+<script src="{{asset('parallax/js/wow.min.js') }}"></script>
+<script>
+    new WOW().init();
+</script>
+{% endblock %}
+</body>
+</html>

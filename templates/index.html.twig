@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+
+ {% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+      {{ form_start(form) }}
+
+        <div style="font-size: 35px;"> {{ form_label(form.auteur) }}</div>
+            {{ form_widget(form.auteur) }} 
+
+            {{ form_label(form.date) }}
+            {{ form_widget(form.date) }} 
+
+      <button class="button button-shadow-2 button-zakaria button-lg button-primary" type="submit" name="action">Ajouter</button>
+            
+      {{ form_end(form) }}
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  
+  </div>
+  {% endblock %}

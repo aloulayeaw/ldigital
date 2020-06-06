@@ -1,0 +1,103 @@
+﻿Parametres d'initialisation
+
+**entrer dans le terminal**
+logoWindows+R et on saisit sqlplus /nolog
+
+ **se connecter**
+connect system/pwd ou connect sys/pwd as sysdba
+
+**se deconnecter**
+disconnect 
+
+ **utilisateur qui s'est connecté**
+show user
+
+**version d'oracle en cours**
+show parameter compatible 
+
+ **version plus détaillée d'oracle**
+select banner from V$version 
+
+**nom de la base de donnees**
+show parameter db_name 
+
+ **nom de l'instance**
+show parameter instance_name
+
+**chemin du fichier d'installation**
+show parameter spfile 
+
+ **chemin des fichiers de controles**
+show parameter control_file
+
+ **chemin du fichier d'alerte**
+show parameter backgound_dump_dest
+
+**SGA**
+show sga
+
+**taille du block Oracle**
+show parameter db_block_size
+
+**afficher la version d'oracle**
+select * from v$version;
+
+**afficher le nom, la date de cretion et le mode d'archivage de la base de donnees**
+desc v$database;
+select name, log_mode, created from v$database;
+
+**afficher le chemin des differents fichiers**
+select * from dba_data_files;
+
+**afficher la liste des sessions utilisateurs**
+select * from v$session where username IS NOT NULL;
+
+**afficher les informations par rapport a l'instaance**
+select * from v$instance;
+
+**lancer deux sessions (sqlplus et sql developpers) et tuer l'une des sessions**
+ALTER system kill session 'SID,SERIAL#';
+
+create tablespace GLRS_TBS
+datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\O1_MF_GLRS_TBS_H51ZT5CR_.DBF' size 1G
+extent management local AUTOALLOCATE;
+
+create tablespace grh_data
+datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\grh_data01.DBF' size 100M;
+create tablespace grh_index
+datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\grh_index01.DBF' size 100M;
+
+create tablespace user_data
+datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\user01.DBF' size 100M,
+'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\user02.DBF' size 100M;
+
+---Creation d'un Tablespace temporaire 
+create temporary tablespace test_temp
+tempfile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\test_temp01.DBF' size 100M; 
+
+---Creation d'un Tablespace undo
+create undo tablespace test_undo
+datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\test_temp01.DBF' size 100M;
+
+select* from dba_tablespaces;
+
+---Resize data file
+
+alter database datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\grh_data01.DBF' resize 250M;
+
+---Modifiez le fichier GRH_INDEX01.DBF de façon à ce qu’il augmente dynamiquement de 10M quand il est plein
+
+alter database datafile 'E:\Oracle\oracle_server\oradata\LAYE\DATAFILE\grh_index01.DBF' autoextend ON next 10M maxsize 500M;
+select * from dba_users;
+
+---Creation de users
+
+create user user1 identified by passer;
+
+***les utilisateurs sous oracle n'ont pas de privilége
+
+grant connect to user1;
+alter user user1 account lock;
+alter user user1 account unlock;
+
+alter user user1 identified by passer123
